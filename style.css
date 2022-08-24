@@ -1,0 +1,174 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #4682B4;
+  padding: 10px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#btnAddColuna{
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid white;
+  background: #4682B4;
+  color: white;
+  outline: none;
+}
+
+#btnAddColuna:hover{
+  background: #fffc99;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+#titulo{
+  font-family: 'Staatliches', cursive;
+  font-size: 37px;
+  margin-left: 25px;
+}
+
+#titulo, .texto{
+  display: inline-block;
+  text-align: center;
+}
+
+.texto{
+  margin-top: 20px;
+  margin-right: 25px;
+  display: flex;
+}
+
+.texto input{
+  width: 250px;
+  height: 35px;
+  border-radius: 12px;
+  border: 1px solid white;
+  outline: none;
+  padding-left: 10px;
+  font-size: 18px;
+  margin-left: 1.5%;
+  margin-right: 4px;
+  background-color: #FFDEAD;
+}
+
+p{
+  color: white;
+}
+
+#column{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+#column div{
+  background-color: #c0c0c0;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 12px;
+  justify-content: space-around;
+}
+
+#column input{
+  width: 50%;
+  padding: 4%;
+  margin: 4%;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1.0rem;
+  font-family: 'Staatliches', cursive;
+  background-color: white;
+}
+
+#column button{
+  width: 40px;
+  height: 40px;
+  margin: 2%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #FFDEAD;
+}
+
+#column button:hover{
+  background-color: #ffc670;
+}
+
+.coluna{
+  margin: 0 auto;
+  width: 350px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #cdcdcd;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.identificacaoTarefa{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;     
+}
+
+.identificacaoTarefa input{
+  width: 200px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+  outline: none;
+  font-size: 14px;
+  background: white;
+  color: black;
+}
+
+.identificacaoTarefa button{
+  width: 45px;
+  border-radius: 12px;
+  border: 1px solid #4682B4;
+  background: #4682B4;
+  color: #FFF;
+  outline: none;
+}
+
+#inputNovaColuna::placeholder{
+  font-size: 1.0rem;
+  font-family: 'Staatliches', cursive;
+}
+
+.textoTitulo{
+  font-size:  25px;
+  font-family: 'Staatliches', cursive;
+  display: block;
+  text-align: center;
+}
+
+.textoTarefa{
+  font-size: 18px;
+  font-family: 'Staatliches', cursive;
+  display: inline-block;
+}
+
+li{
+  list-style-type: none;
+  background: white;
+  border-radius: 12px;
+  margin: 10px;
+  padding: 8px;
+}
+
+/* tentando estilizar o botão de apagar tarefa e o checkbox*/
