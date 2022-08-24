@@ -1,0 +1,51 @@
+<!-- FUNCIONALIDADES DO NOSSO SISTEMA: 
+- O usuário deve ser capaz de adicionar novas colunas de afazeres e dar um título para elas. Por exemplo: “a fazer”, “fazendo”, “concluídas”;
+- Em cada coluna, o sistema deve permitir que o usuário insira cartões de atividades, com a descrição da tarefa;
+- Em cada cartão adicionado, deve ser possível marcá-lo como concluído ou removê-lo da coluna em questão;
+- O sistema deve permitir que usuário mova um cartão de uma coluna para outra (esse movimento não precisa, necessariamente, ser interativo, do tipo arrastar e soltar, mas pode ser uma mudança na configuração do cartão). -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- TÌTULO -->
+  <div id="navbar">
+    <div id="titulo">
+      <p>To Do List</p>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- div contendo todo o conteudo -->
+  <div id="conteudo">
+
+    <!-- div contendo as colunas -->
+    <div class="texto">
+      <input type="text" id="inputNovaColuna" placeholder="Adicionar coluna">
+      <button id="btnAddColuna" onclick="adicionarColuna(event)">
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <br>
+
+  <div id="column"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
